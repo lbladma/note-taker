@@ -49,4 +49,4 @@ This app allows the user to add or take notes. and return to them later. notes c
 ## Link 
 This is the link to the live site on [Heroku](https://pacific-falls-51483.herokuapp.com/).
 
-This is the link to my github repo [GitHub](https://github.com/lbladma/note-taker).
+This is the link to my github Repo [GitHub](https://github.com/lbladma/note-taker).
