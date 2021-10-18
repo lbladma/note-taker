@@ -36,7 +36,7 @@ This app allows the user to add or take notes. and return to them later. notes c
 ## Technologies
 <img align="left" width="26px" alt="CSS" src="./public\assets\images\css.png">
 <img align="left" width="26px" alt="HTML" src="./public\assets\images\html.png">
-<img align="left" width="26px" alt="Node" src="./public\assets\images\note.png">
+<img align="left" width="26px" alt="Node" src="./public\assets\images\node.png">
 <img align="left" width="26px" alt="JS" src="./public\assets\images\JS.png">
 <img align="left" width="26px" alt="Github" src="./public\assets\images\github.png">
 
