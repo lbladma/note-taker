@@ -34,11 +34,11 @@ This app allows the user to add or take notes. and return to them later. notes c
 <br>
 
 ## Technologies
-<img align="left" width="26px" alt="CSS" src="public\assets\images\CSS.png">
-<img align="left" width="26px" alt="CSS" src="public\assets\images\HTML.png">
-<img align="left" width="26px" alt="CSS" src="public\assets\images\Node.png">
-<img align="left" width="26px" alt="CSS" src="public\assets\images\JS.png">
-<img align="left" width="26px" alt="CSS" src="public\assets\images\github.png">
+<img align="left" width="26px" alt="CSS" src=".\public\assets\images\CSS.png">
+<img align="left" width="26px" alt="HTML" src="public\assets\images\HTML.png">
+<img align="left" width="26px" alt="Node" src="public\assets\images\Node.png">
+<img align="left" width="26px" alt="JS" src="public\assets\images\JS.png">
+<img align="left" width="26px" alt="Github" src="public\assets\images\github.png">
 
 <br><br>
 
