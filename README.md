@@ -47,4 +47,4 @@ This app allows the user to add or take notes. and return to them later. notes c
 
 
 ## Link 
-This is the link to the live site on [heroku](hhttps://pacific-falls-51483.herokuapp.com/).
+This is the link to the live site on [heroku](https://pacific-falls-51483.herokuapp.com/).
