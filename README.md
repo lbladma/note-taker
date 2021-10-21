@@ -44,7 +44,16 @@ This app allows the user to add or take notes. and return to them later. notes c
 
 #
 #
+<img width="600" height="400" alt="" src="public\assets\images\CSS.png">
 
+
+
+<img width="600" height="400" alt="" src="public\assets\images\CSS.png">
+
+
+<img width="600" height="400" alt="" src="public\assets\images\CSS.png">
+
+<br>
 
 ## Link 
 This is the link to the live site on [Heroku](https://pacific-falls-51483.herokuapp.com/).
