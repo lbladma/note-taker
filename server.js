@@ -1,23 +1,59 @@
-const express = require("express");
-const htmlRouter = require('./routes/htmlRoute.js');
-const routes = require('./routes/mainRouter.js');
+const express = require('express');
+const path = require('path');
+const { v4: uuidv4 } = require('uuid');
+const { readAndAppend, readFile, deleteNote} = require('./public/assets/helper/readAndAppend');
+const database = './db/db.json';
 
-
+const PORT = process.env.PORT || 3001;
 
 const app = express();
-const PORT = process.env.PORT || 3001;//connection for heroku
+app.use(express.static('public'));
 
-
-// Middleware for urlencoded form data and parsing JSON and displaying all thats in public
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static("public"));
 
-app.use('/', htmlRouter);
-app.use('/api', routes);
+app.get('/', (req, res) =>
+  res.sendFile(path.join(__dirname, '/public/index.html'))
+);
+
+app.get('/notes', (req, res) =>
+  res.sendFile(path.join(__dirname, '/public/notes.html'))
+);
+
+app.get('/api/notes', (req, res) => {
+  readFile('./db/db.json').then((data) => res.json(JSON.parse(data)))
+});
 
 
+app.post('/api/notes', (req, res) => {
+  console.log(req.body);
+  const { title, text } = req.body;
 
-//link to the app using localhost/port number
+  if (req.body) {
+    const newNote = {
+      title,
+      text,
+      id: uuidv4(),
+    };
+
+    readAndAppend(newNote, './db/db.json');
+    res.json('note added');
+  } else {
+    res.error('error in saving note');
+  }
+});
+
+
+app.delete("/api/notes/:id", (req, res) => {
+  const id = req.params.id;
+  deleteNote(database, id);
+  res.json({ id: id });
+});
+
+app.get('*', (req, res) =>
+  res.sendFile(path.join(__dirname, '/public/index.html'))
+);
+
 app.listen(PORT, () =>
-    console.log("Application is listening on PORT: " + PORT));
+  console.log(`App listening at http://localhost:${PORT} 🚀`)
+);
