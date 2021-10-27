@@ -3,12 +3,12 @@ const uuid = require('../helpers/uuid');
 const router = require('express').Router();
 const { readFromFile, writeToFile, readAndAppend } = require('../helpers/fsUtils');
 
-//Route to get all notes
+
 router.get('/notes', (req, res) => {
     readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
 });
 
-//Route for posting the new notes
+
 router.post('/notes', (req, res) => {
     const { title, text } = req.body;
 
@@ -19,7 +19,7 @@ router.post('/notes', (req, res) => {
             note_id: uuid(),
         };
 
-        //adding the note to the jsonfile
+        
         readAndAppend(newNote, './db/db.json');
 
         res.json('It woked, the note was added');
