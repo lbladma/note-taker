@@ -6,7 +6,7 @@
 
 const express = require("express");
 const path = require("path");
-const noteRouter = require("./routes/noteRouter");
+const noteRouter = require("./routes/noteRoutes");
 
 
 const PORT = process.env.PORT || 3001;
