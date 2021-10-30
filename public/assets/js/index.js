@@ -1,3 +1,9 @@
+
+// Assignment: Note-Taker project 
+// Author: Taoufik Ammi
+// Date: 10/27/2021 
+// Course: UNC Coding BootCamp
+
 let noteTitle;
 let noteText;
 let saveNoteBtn;
