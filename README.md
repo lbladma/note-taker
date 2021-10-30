@@ -20,15 +20,16 @@ This app allows the user to add or take notes. and return to them later. These n
 #
 ## Screenshots
 
-<img width="600" height="400" alt="Screen Shot 2021-08-20 at 11 06 55 PM" src="public\assets\images\note1.png">
+<img width="600" height="400" alt="note1" src="public\assets\images\note1.png">
+
+<img width="600" height="400" alt="note2" src="public\assets\images\note2.png">
+
+<img width="600" height="400" alt="note3" src="public\assets\images\note3.png">
 
 
 
-<img width="600" height="400" alt="Screen Shot 2021-08-20 at 11 07 11 PM" src="public\assets\images\note3.png">
 
-
-<img width="600" height="400" alt="Screen Shot 2021-08-20 at 11 15 08 PM" src="public\assets\images\note2.png">
-
+<img width="600" height="400" alt="note4" src="public\assets\images\note4.png">
 <br>
 
 #
@@ -57,7 +58,7 @@ This is the link to my github Repo [GitHub](https://github.com/lbladma/note-take
 
 #
 #
-# Project Descritpion: 
+# Project Descritpion From the HOMEWORK OUTLINE: 
 #
 
 # 11 Express.js: Note Taker
